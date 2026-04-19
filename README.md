@@ -4,11 +4,11 @@ GitOps configuration repository for the Zen Pharma platform.
 ArgoCD watches this repo and syncs all changes to the EKS cluster automatically.
 
 > **Companion repos:**
-> - [`zen-infra`](https://github.com/your-github-username/zen-infra) — Terraform for AWS infrastructure (EKS, RDS, ECR, IAM)
-> - [`zen-pharma-backend`](https://github.com/your-github-username/zen-pharma-backend) — Spring Boot microservices
-> - [`zen-pharma-frontend`](https://github.com/your-github-username/zen-pharma-frontend) — React frontend
+> - [`zen-infra`](https://github.com/Niranjan-devops/zen-infra) — Terraform for AWS infrastructure (EKS, RDS, ECR, IAM)
+> - [`zen-pharma-backend`](https://github.com/Niranjan-devops/zen-pharma-backend) — Spring Boot microservices
+> - [`zen-pharma-frontend`](https://github.com/Niranjan-devops/zen-pharma-frontend) — React frontend
 
-> **Note:** Replace `your-github-username` in all `repoURL` fields inside `argocd/` with your actual GitHub username after forking.
+> **Note:** Replace `Niranjan-devops` in all `repoURL` fields inside `argocd/` with your actual GitHub username after forking.
 
 ---
 
@@ -103,8 +103,8 @@ Final Kubernetes manifests for auth-service in the dev namespace
 ArgoCD Application for a service:
 ```yaml
 source:
-  # Replace 'your-github-username' with your GitHub username
-  repoURL: https://github.com/your-github-username/zen-gitops.git
+  # Replace 'Niranjan-devops' with your GitHub username
+  repoURL: https://github.com/Niranjan-devops/zen-gitops.git
   path: helm-charts
   helm:
     valueFiles:
